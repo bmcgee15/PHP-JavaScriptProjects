@@ -1,0 +1,67 @@
+/*
+
+The css stylesheet for my two page conversion app
+
+Created by Bret McGee - 9/19/2018
+I, Bret McGee, 000207475 certify that this material
+is my original work. No other person's work has
+been used without due acknowledgement.
+
+besides the last attribute, there doesn't seem to be a need
+need for commenting the rest as they are straight forward.
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(189, 189, 189);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form, input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+form {
+    background-color: lightgray;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Makes every other line of the table a different shade */
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

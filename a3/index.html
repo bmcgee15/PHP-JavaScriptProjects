@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+The account login & account creation forms. 
+Created by Bret McGee - 10/19/2018
+I, Bret McGee, 000207475 certify that this material
+is my original work. No other person's work has
+been used without due acknowledgement.
+-->
+<html>
+    <head>
+
+        <!-- Page Title, Meta Date & Link to CSS Sheet -->
+        <title>Account Login/Creation</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width">
+        
+    </head>
+    <body> 
+        <div id="container">
+            
+            <!-- Login Form Heading -->
+            <h1>Account Login</h1><br>
+
+            <!-- Login form linked to loginVerification.php -->
+            <form action="loginVerification.php" method="POST">
+                    Username: <input type="text" name="userName" minLength="8" maxLength="25" required><br>
+                    Password: <input type="text" name="password" minLength="8" maxLength="50" required><br>
+                    <input type="submit" value="Login">
+            </form><br>
+
+            <!-- Create Account Form Heading -->
+            <h1>Create a free account</h1><br>
+
+            <!-- Create Account form linked to createLogin.php -->
+            <form action="createLogin.php" method="POST">
+                    Username: <input type="text" name="userName" minLength="8" maxLength="25" required><br>
+                    Password: <input type="text" name="password" minLength="8" maxLength="50" required><br>
+                    Confirm Password: <input type="text" name="confirm" minLength="8" maxLength="50" required><br>
+                <input type="submit" value="Create Account">
+
+            </form>
+        </div>
+    </body>
+</html>

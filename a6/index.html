@@ -1,0 +1,41 @@
+<!--
+  This is a web app that can post and generate tweets to a server
+
+  Bret McGee - December 6th 2018
+
+  I, Bret McGee, 000207475 certify that this material is my original work.
+  No other person's work has been used without due acknowledgement.
+-->
+<html>
+    <head>
+        <!-- The title of the page -->
+        <title>Tweet Page</title>
+        <!-- Linking to the jquery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Linking to the css file -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- The main div that holds all of the elements -->
+        <div class="container box">
+            <!-- The tweet submission form -->
+            <form name="add_tweet" method="post">
+                <!-- The title displayed -->
+                <h2 id="tweetTitle">Write a Tweet</h2>
+                <!-- The textarea that you write your tweets -->
+                <div class="form-group">
+                    <textarea name = "tweet" id="tweet" class="form-container"></textarea>
+                </div>
+                <!-- The button to push the written tweet or generate 10 rendom ones -->
+                <div class="form-group">
+                    <input type="button" name="btn_tweet" id="btn_tweet" value="Tweet">
+                    <input type="button" name="gen_ten" id="gen_ten" value="Generate 10 Randoms">
+                </div>
+            </form>
+            <!-- The button to link to the view tweets page -->
+            <input type="button" id="buttons" value="View Tweets" onclick="window.location.href='update'"/>
+        </div>
+    </body>
+</html>
+<!-- Calling the js logic file -->
+<script src="js/insert.js"></script>

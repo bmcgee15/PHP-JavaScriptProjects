@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+Morn that selects PHP exam grades based on min/max values
+Created by Bret McGee - 9/21/2018
+I, Bret McGee, 000207475 certify that this material
+is my original work. No other person's work has
+been used without due acknowledgement.
+-->
+<html>
+    <head>
+        <title>Exam Grade Query</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body> 
+        <div id="container">
+            <h1>MIN/MAX grade you would like to see!</h1>
+            <form action="showallgrades.php" method="POST">
+                    Minimum Value: <input type="number" name="minVal" min="0" max="100" required><br>
+                    Maximum Value: <input type="number" name="maxVal" min="0" max="100" required><br>
+                    <input type="submit" value="Search for Exam Grades in this range">
+            </form>
+        </div>
+    </body>
+</html>

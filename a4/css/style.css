@@ -1,0 +1,208 @@
+/* dice 1 styling */
+#dice-1 {
+  top: 25%;
+}
+/* dice 2 styling */
+#dice-2 {
+  top: 35%;
+}
+/* all element styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* clearfix wrapper styling */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* body styling */
+body {
+  background-image: linear-gradient(
+      rgba(62, 20, 20, 0.4),
+      rgba(62, 20, 20, 0.4)
+    ),
+    url(back.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: Lato;
+  font-weight: 300;
+  position: relative;
+  height: 100vh;
+  color: #555;
+}
+/* wrapper styling */
+.wrapper {
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(0%, 0%);
+  background-color: #fff;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+/* player panel styling */
+.player-0-panel,
+.player-1-panel {
+  width: 50%;
+  float: left;
+  height: 600px;
+  padding: 0px;
+}
+/* player name styling */
+.player-name {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+/* player score styling */
+.player-score {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 100;
+  color: #5ad6fc;
+  margin-bottom: 130px;
+}
+/* active user styling */
+.active {
+  background-color: #f7f7f7;
+}
+/* active player name styling */
+.active .player-name {
+  font-weight: 300;
+}
+/* active player name after styling */
+.active .player-name::after {
+  content: "\2022";
+  font-size: 20px;
+  position: absolute;
+  color: #5ad6fc;
+  top: -7px;
+  right: 10px;
+}
+/* current player box styling */
+.player-current-box {
+  background-color: #5ad6fc;
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  padding: 12px;
+  text-align: center;
+  border-radius: 25px;
+}
+/* current player label styling */
+.player-current-label {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #222;
+}
+/* current player score styling */
+.player-current-score {
+  font-size: 30px;
+}
+/* button styling */
+button {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #555;
+  background: none;
+  border: none;
+  font-family: Lato;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 300;
+  transition: background-color 0.3s, color 0.3s;
+}
+/* button hover styling */
+button:hover {
+  font-weight: 600;
+}
+/* button hover icon styling */
+button:hover i {
+  margin-right: 20px;
+}
+/* button focus styling */
+button:focus {
+  outline: none;
+}
+/* new game button styling */
+.btn-new {
+  bottom: 30px;
+}
+/* roll dice button styling */
+.btn-roll {
+  bottom: 130px;
+}
+/* next player button styling */
+.btn-next {
+  bottom: 80px;
+}
+/* dice styling */
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 178px;
+  transform: translateX(-50%);
+  height: 50px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+/* winner styling */
+.winner {
+  background-color: #f7f7f7;
+}
+/* winner player name styling */
+.winner .player-name {
+  font-weight: 300;
+  color: #5ad6fc;
+}
+/* round label styling */
+#round {
+  top: 90px;
+}
+/* first to 7 wins styling */
+#win {
+  bottom: 180px;
+}
+/* website title styling */
+#title {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+/* help button styling */
+#help {
+  text-align: center;
+  color: white;
+  top: 5%;
+  left: 15%;
+}
+/* help div styling */
+#helpDiv {
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(0%, 0%);
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+/* back button styling */
+#back {
+  text-align: center;
+  color: white;
+  top: 25px;
+}

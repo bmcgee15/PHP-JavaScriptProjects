@@ -1,0 +1,221 @@
+/*
+  The style for the Space themed quiz that ends with a "Big Bang"
+  
+
+  Bret McGee - December 1st 2018
+
+  I, Bret McGee, 000207475 certify that this material is my original work.
+  No other person's work has been used without due acknowledgement.
+*/
+
+/* header style */
+.header-dark {
+  background: url(../../assets/img/mountain_bg.jpg) #444;
+  background-size: cover;
+  padding-bottom: 80px;
+}
+/* bedia query above 768px */
+@media (min-width: 768px) {
+  .header-dark {
+    padding-bottom: 120px;
+  }
+}
+/* navbar style */
+.header-dark .navbar {
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+/* media query for above 768px */
+@media (min-width: 768px) {
+  .header-dark .navbar {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+/* media query for above 275ox */
+@media (min-width: 275px) {
+  .justify-content-xs-center {
+    justify-content: center !important;
+  }
+}
+/* media query for above 275px */
+@media (min-width: 275px) {
+  .d-xs-flex {
+    display: flex !important;
+  }
+}
+/* style for brand */
+.header-dark .navbar .navbar-brand {
+  font-weight: bold;
+  color: inherit;
+}
+/* style for brand hover */
+.header-dark .navbar .navbar-brand:hover {
+  color: #f0f0f0;
+}
+/* media query for bigger than 992 px */
+@media (min-width: 992px) {
+  .header-dark .navbar.navbar .navbar-nav .nav-link {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
+/* style for nav link */
+.header-dark .navbar.navbar-dark .navbar-nav .nav-link {
+  color: #d9d9d9;
+}
+/* style for nav link focus */
+.header-dark .navbar.navbar-dark .navbar-nav .nav-link:focus,
+.header-dark .navbar.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fcfeff !important;
+  background-color: transparent;
+}
+/* style for dropdown menu */
+.header-dark .navbar .navbar-nav > li > .dropdown-menu {
+  margin-top: -5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 2px;
+}
+/* style for dropdown menun */
+.header-dark .navbar .dropdown-menu .dropdown-item:focus,
+.header-dark .navbar .dropdown-menu .dropdown-item {
+  line-height: 2;
+  font-size: 14px;
+  color: #37434d;
+}
+/* styl;e for button hover */
+.header-dark .navbar .dropdown-menu .dropdown-item:focus,
+.header-dark .navbar .dropdown-menu .drodown-item:hover {
+  background: #ebeff1;
+}
+/* style for active button */
+.header-dark .navbar .action-button,
+.header-dark .navbar .action-button:active {
+  background: #208f8f;
+  border-radius: 20px;
+  font-size: inherit;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+  text-shadow: none;
+  padding: 0.5rem 0.8rem;
+  transition: background-color 0.25s;
+}
+/* style for button */
+.action-button {
+  background: #208f8f;
+  border-radius: 20px;
+  font-size: inherit;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+  text-shadow: none;
+  padding: 0.5rem 0.8rem;
+  transition: background-color 0.25s;
+  margin-top: 10px;
+}
+/* style for button hover */
+.action-button:hover {
+  background: #269d9d;
+  margin-top: 10px;
+}
+/* style for button hover */
+.header-dark .navbar .action-button:hover {
+  background: #269d9d;
+}
+/* style for label */
+.header-dark .navbar .form-inline label {
+  color: #ccc;
+}
+/* style for search fields */
+.header-dark .navbar .form-inline .search-field {
+  display: inline-block;
+  width: 80%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  color: #ccc;
+  box-shadow: none;
+  color: inherit;
+  transition: border-bottom-color 0.3s;
+}
+/* style for search field focus */
+.header-dark .navbar .form-inline .search-field:focus {
+  border-bottom: 1px solid #ccc;
+}
+/* syle for hero class bigger than 768px */
+.header-dark .hero {
+  margin-top: 60px;
+}
+/* media query for hero class bigger than 768px */
+@media (min-width: 768px) {
+  .header-dark .hero {
+    margin-top: 20px;
+  }
+}
+/* style for h1 bigger than 768px */
+.header-dark .hero h1 {
+  color: #fff;
+  font-family: "Bitter", serif;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+/* media query for h1 bigger than 768px */
+@media (min-width: 768px) {
+  .header-dark .hero h1 {
+    margin-bottom: 50px;
+    line-height: 1.5;
+  }
+}
+/* style for the iframe */
+.header-dark .hero .embed-responsive iframe {
+  background-color: #666;
+}
+/* style for the score */
+#score {
+  text-align: center;
+}
+/* style for the quiz form section */
+#quizForm {
+  color: #ccc;
+  text-align: center;
+  font-size: 1.5em;
+}
+/* style for ball 1 */
+#movingBall1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 200px;
+  background-color: rgba(0, 0, 0, 0);
+  top: 50px;
+  left: 0px;
+}
+/* style for ball 2 */
+#movingBall2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 200px;
+  background-color: rgba(0, 0, 0, 0);
+  top: 50px;
+  left: 0px;
+}
+/* style for ball 3 */
+#movingBall3 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 200px;
+  background-color: rgba(0, 0, 0, 0);
+  top: 50px;
+  left: 0px;
+}

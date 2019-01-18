@@ -1,0 +1,66 @@
+<!--
+  A dice game called chicago.
+
+  Rules: To Play: There are five rounds numbered 2 - 7. In each round the player
+        tries to roll and score the number of the round, the numbers being the
+        combinations possible with 2 dice. If a player throws the correct number
+        for that round they score 1 point. If they throw any other number they
+        don’t score. The first person to get 5 points (round 7) wins.
+
+        * Active user clicks roll dice button to roll, and after every roll the
+        next turn button has to be clicked. Click on the new game button to
+        start a new game *
+
+  Bret McGee - November 21st 2018
+
+  I, Bret McGee, 000207475 certify that this material is my original work.
+  No other person's work has been used without due acknowledgement.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <title>Chicago</title>
+  </head>
+
+  <body>
+    <h1 id="title">CHICAGO</h1>
+    <div class="wrapper clearfix">
+      <div class="player-0-panel active">
+        <div class="player-name" id="name-0">Player 1</div>
+        <div class="player-score" id="score-0">2</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-0"></div>
+        </div>
+      </div>
+
+      <div class="player-1-panel">
+        <div class="player-name" id="name-1">Player 2</div>
+        <div class="player-score" id="score-1">2</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-1">0</div>
+        </div>
+      </div>
+
+      <button id="round">ROUND</button>
+      <button id="win">FIRST TO 7 WINS</button>
+      <button class="btn-new">New game</button>
+      <button class="btn-roll">Roll dice</button>
+      <button class="btn-next">Next Turn</button>
+
+      <img src="dice-5.png" alt="Dice" class="dice" id="dice-1" />
+      <img src="dice-5.png" alt="Dice" class="dice" id="dice-2" />
+    </div>
+    <button id="help" onclick="window.location.href='help.html'">HELP</button>
+    <script src="js/logic.js"></script>
+  </body>
+</html>

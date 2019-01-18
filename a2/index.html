@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+Intake Form to redirect to formValidation.php
+This app creates a shopping list for user
+Created by Bret McGee - 10/03/2018
+I, Bret McGee, 000207475 certify that this material
+is my original work. No other person's work has
+been used without due acknowledgement.
+-->
+<html>
+    <head>
+            <title>Store Shopping List</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <link rel="stylesheet" href="css/style.css">
+            <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <h1>Hello!</h1>
+        <h3>Please enter the information about what store you will be visiting</h3>
+        <form action="formValidation.php" method="GET">
+            Store Name:<input type="text" placeholder="Format: 'Food Basics'" name="name" minLength="1" maxLength="25" required><br>
+            Street Address:<input type="text" placeholder="Format: '35 Cannon rd. W'" name="address" minLength="1" maxLength="25" required><br>
+            City:<input type="text" name="city" placeholder="Format: 'Burlington'" minLength="1" maxLength="15" required><br>
+            Postal Code:<input type="text" placeholder="Format: 'L4G 5D2'" name="postal" minLength="6" maxLength="7"required><br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </body>
+</html>

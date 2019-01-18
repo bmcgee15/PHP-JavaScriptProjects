@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Forms to redirect to 3 different php files
+to insert, delete, and update mysql tables
+Created by Bret McGee - 9/21/2018
+I, Bret McGee, 000207475 certify that this material
+is my original work. No other person's work has
+been used without due acknowledgement.
+-->
+<html lang="en">
+    <head>
+        <title>MySQL Table Forms</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>INSERT NEW STUDENT</h1>
+        <form action="PDOInsert.php" method="POST">          
+            First Name: <input type="text" name="firstName" maxlength="40" required><br>
+            Last Name: <input type="text" name="lastName" maxlength="40" required><br>
+            Student ID: <input type="number" name="studentID" minlength="9" maxlength="9" required><br>
+            Online Assignment Grade: <input type="number" name="onlineAssignmentGrade" min="0" max="150"><br>
+            Assignment 1 Grade: <input type="number" name="assignment1Grade" min="0" max="150"><br>
+            Assignment 2 Grade: <input type="number" name="assignment2Grade" min="0" max="150"><br>
+            Assignment 3 Grade: <input type="number" name="assignment3Grade" min="0" max="150"><br>
+            PHP Exam Grade: <input type="number" name="PHPExamGrade" min="0" max="150"><br>
+            Start Date: <input type="date" name="startDate" required><br>
+            Completion Date: <input type="date" name="completionDate"><br>
+            Student Reflection: <input type="text" name="studentReflection" maxlength="1000"><br>
+            <input type="submit" name="submitInsert" value="Create Student Record">
+        </form>
+        <h1>DELET RECORD BY STUDENT ID</h1>
+        <form action="PDODelete.php" method="POST">          
+            Delete Record by Student ID: <input type="number" name="studentID" minlength="9" maxlength="9" required><br>
+            <input type="submit" name="deleteRecord" value="Delete Student Record">
+        </form>
+        <h1>UPDATE PHP EXAM GRADE BY STUDENT ID</h1>
+        <form action="PDOUpdate.php" method="POST">          
+                Student ID: <input type="number" name="studentID" minlength="9" maxlength="9" required><br>
+                PHP Exam Grade: <input type="number" name="PHPExamGrade" min="0" max="150"><br>
+                <input type="submit" name="updateGrade" value="Update Exam Grade">
+            </form>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+<!--
+  The structure of a Space themed quiz that ends with a "Big Bang"
+  ** HTML AND CSS CREATED BY ME USING BOOTSTRAP TOOL CALLED BOOTSTRAP STUDIO **
+
+  Bret McGee - December1st 2018
+
+  I, Bret McGee, 000207475 certify that this material is my original work.
+  No other person's work has been used without due acknowledgement.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Making the document responsive -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>a5</title>
+    <!-- Linking css -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <!-- Linking css -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bitter:400,700"
+    />
+    <!-- Linking css -->
+    <link rel="stylesheet" href="assets/css/Header-Dark.css" />
+    <!-- Linking css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    />
+  </head>
+
+  <body style="background-size: contain;background-color: rgba(0,0,0,0.5);">
+    <div>
+      <!-- setting background -->
+      <div
+        class="header-dark"
+        style="background-color: rgba(0,0,0,0);background-size: cover;background-image: url(&quot;assets/img/astrology-astronomy-background-image-956981.jpg&quot;);"
+      >
+      <!-- setting navbar -->
+        <nav
+          class="navbar navbar-dark navbar-expand-md navigation-clean-search"
+        >
+        <!-- setting hover animations -->
+          <div class="container">
+            <a class="navbar-brand" href="#" data-bs-hover-animate="pulse"
+              >Quiz Knows</a
+            ><button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navcol-1"
+            >
+              <a
+                class="btn btn-light action-button"
+                role="button"
+                href="index.html"
+                data-bs-hover-animate="pulse"
+                >Restart</a
+              >
+            </button>
+            <div
+              class="collapse navbar-collapse d-md-flex d-lg-flex d-xl-flex justify-content-md-end justify-content-lg-end justify-content-xl-end"
+              id="navcol-1"
+            >
+              <a
+                class="btn btn-light action-button"
+                role="button"
+                href="index.html"
+                data-bs-hover-animate="pulse"
+                >Restart</a
+              >
+            </div>
+          </div>
+        </nav>
+        <div class="container hero">
+          <div class="row">
+            <div class="col-md-8 offset-md-2" style="height: 457px;">
+              <!-- setting the main text/question heading -->
+              <h1 class="text-center" id="question">Welcome!</h1>
+              <div class="container" id="quiz">
+                <!-- setting the div container to be made responsive -->
+                <div
+                  class="d-xs-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-xs-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center"
+                  id="navcol-1"
+                ><div id="formDiv">
+                <form id="quizForm">
+                  <a
+                    class="btn btn-light action-button"
+                    role="button"
+                    id="start"
+                    data-bs-hover-animate="pulse" 
+                    >Begin</a
+                  ></form>
+                </div>
+                </div>
+                <h1 id="score"></h1>
+                <!-- setting button to be used later -->
+                <a
+  class="btn btn-light action-button"
+  role="button"
+  id="verifyResult"
+  style="display: none;"
+  data-bs-hover-animate="pulse" 
+  >Submit Answer</a
+>
+<!-- setting button to be used later -->
+<a
+class="btn btn-light action-button"
+role="button"
+id="nextQuestion"
+style="display: none;"
+data-bs-hover-animate="pulse" 
+>Next Question</a
+>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container text-center d-xl-flex mx-auto justify-content-xl-center align-items-xl-center"
+      style="margin: 0;padding: 0;padding-top: 25px;"
+    >
+      <div
+        class="col text-center d-flex justify-content-center align-items-center mx-auto"
+      >
+        <h1
+          class="text-center d-xl-flex justify-content-xl-center align-items-xl-center"
+          style="color: rgb(255,255,255);"
+        >
+          By Bret McGee
+        </h1>
+      </div>
+      <!-- setting balls to be used later -->
+      <div id="movingBall1"></div>
+      <div id="movingBall2"></div>
+      <div id="movingBall3"></div>
+    </div>
+    <!-- setting up js file link -->
+    <script src="assets/js/logic.js"></script>
+  </body>
+</html>
